@@ -1,0 +1,82 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('https://wc.wallpaperuse.com/wallp/31-312216_s.jpg'); /* 여기에 이미지 URL 입력 */
+    background-size: cover; /* 배경 이미지를 전체 화면에 맞게 조정 */
+    background-position: center; /* 이미지 중앙 정렬 */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header {
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    animation: rainbow 7s infinite;
+}
+
+.header span {
+    font-size: 4em;
+    font-weight: bold;
+    color: white;
+    text-shadow:
+        -3px -3px 0 blue,  
+         3px -3px 0 blue,
+        -3px  3px 0 blue,
+         3px  3px 0 blue;  /* 파란색 글자 테두리 */
+}
+
+.border {
+    background-color: blue;
+    width: 100%;
+    text-align: center;
+}
+
+.border span {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: white;
+    white-space: nowrap;
+    display: inline-block;
+    overflow: hidden;
+    text-shadow:
+        -1px -1px 0 black,  
+         1px -1px 0 black,
+        -1px  1px 0 black,
+         1px  1px 0 black;  /* 검정색 글자 테두리 */
+}
+
+.content {
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(to bottom, blue, skyblue, white, white);
+    box-sizing: border-box;
+}
+
+.content p {
+    font-weight: bold;
+    line-height: 1.2;
+    letter-spacing: -2px;
+    transform: scaleY(1.1);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2), 
+                 -1px -1px 0 white, 
+                  1px -1px 0 white, 
+                 -1px  1px 0 white, 
+                  1px  1px 0 white;  /* 흰색 글자 테두리 */
+    padding: 5px;
+    margin: 5px 0;
+    color: black;
+}
+
+@keyframes rainbow {
+    0%, 100% { background-color: blue; }
+    21{ background-color: navy; }
+    33% { background-color: black; }
+    55% { background-color: gray; }
+    72% { background-color: skyblue; }
+    90% { background-color: white
+}
